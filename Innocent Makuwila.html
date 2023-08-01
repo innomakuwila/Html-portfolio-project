@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InnoSaint_Mak</title>
+  <style>
+    .header-bg{
+     background-image: url(Headerbg.jpg);
+     background-size: cover;
+     background-position: center;
+     color: rgb(245, 245, 243);
+     padding: 1rem;
+     text-align: center;
+     
+    }
+.header-bg h1,
+.header-bg h3{
+  text-shadow: 2px 2px 4px black;
+}
+    .portfolio-container {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-top: 2rem;
+      }
+    .portfolio-text {
+     flex: 1;
+    } 
+    .thumbnail-container {
+     display: flex;
+     gap: 10px;
+     justify-content: center;
+    }
+    .thumbnail {
+    width: 100px;
+     height: 100px;
+     cursor: pointer;
+      }
+    .enlarged-image {
+     max-width: 50%;
+     max-height: 50%;
+     border-radius: 8px;
+     object-fit: contain;
+ 
+ }
+    .enlarged-image-container {
+     position: contain;
+     top: 20%;
+     left: 20%;
+     transform: translate(-20%, -20%);
+     z-index: 1;
+     display: none;
+     background-color: rgba(0, 0, 0, 0.8);
+     border-radius: 8px;
+     padding: 20px;
+      }
+    .thumbnail:hover + .enlarged-image-container {
+     display: contain;
+      }
+    body {
+      font-family: arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #fff;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      position: center;
+      margin-top: 2rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .project {
+      border: 2px solid #FF4500; 
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .project img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    #contact {
+      margin-top: 2rem;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .projects {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header-bg">
+    <h1>Get to Know</h1>
+    <h3>Innocent Makuwila</h3>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Highlights</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="container">
+        <h2><center>About Me</center></h2>
+        <p><center>Hi there! Your local zomba adventurer with hella passion in travelling across the country .</center>
+          
+          <br><center>Join me on my thrilling journey as i continue to chase my wanderlust😂😂 <br>and share the stories of my fun adventures</center>
+          <br><center>😊Tawonga chomene😊</center>
+        </p>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <h2>Travel Highlights</h2>
+        
+        <p><b><u>Mulunguzi Dam - Serenity defined</u></b>
+          <br>The picturesque sunset painted the sky awesome hues, leaving me in awe of nature's beauty.
+          <br><br>
+          <b><u>Ku Chawe inn - Majestic Retreat</u></b>
+          <br>Perched high on zomba plateau, offered a cool panoramic view of the old capital city
+          <br>
+          <br>
+          <b><u>Kasonga Hiking Adventure</u></b>
+          <br>Traversing through lush landscapes and rugged terrains left me with cherishable memories of the hiking escapede.
+          <br><br>
+          <b><u>Zomba Mountain - Conquering Heights</u></b><br>
+            Scaling Zomba mountain was an adrenaline filled triumph, giving me an awesome view from the peak. 
+          </p>
+        
+        
+        <div class="portfolio-container">
+          <div class="portfolio-text">
+            <p>join me in my previous travel expeditions🏞<br>
+          Through the fascinating warm heart of malawi♥️</p>
+          </div>
+          <div class="thumbnail-container">
+            <!-- Clickable thumbnail images -->
+            <img class="thumbnail" src="image1-thumbnail.jpg" alt="Image 1">
+            <img class="thumbnail" src="image2-thumbnail.jpg" alt="Image 2">
+            <img class="thumbnail" src="image3-thumbnail.jpg" alt="Image 3">
+            <img class="thumbnail" src="image4-thumbnail.jpg" alt="Image 4">
+            <!-- Enlarged images that appear on hover -->
+            <div class ="enlarged-image-container">
+            <div class="enlarged-image">
+              <img src="image1.jpg" alt="Image 1 Enlarged">
+            </div>
+            <div class="enlarged-image-container">
+            <div class="enlarged-image">
+             <img src="image2.jpg" alt="Image 2 Enlarged">
+            </div>
+            <div class="enlarged-image-container">
+            <div class="enlarged-image">
+             <img src="image3.jpg" alt="Image 3 Enlarged">
+            </div>
+            <div class="enlarged-image-container">
+            <div class="enlarged-image">
+             <img src="image4.jpg" alt="Image 4 Enlarged">
+            </div>
+          </div>
+          
+         </div>
+            
+      </div>
+            </section>
+          
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          Want to head out for the next ultimate malawian travel expedition, reach out to me:
+          <br>
+          Pablomaku02@gmail.com
+          <br>
+          Bis20-imakuwira@poly.ac.mw
+          <br>
+          <br>
+          <u>Follow and engage with me on my social media handles</u>
+          <br>
+          Twitter:@InnoSaint_Mak
+          <br>
+          Instagram: Inno Makuwila
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // JavaScript functionality can be added here if needed
+  </script>
+</body>
+</html>
